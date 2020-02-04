@@ -15,7 +15,7 @@ npm install @ganbarodigital/ts-uuid-parser
 
 ```typescript
 // add this import to your Typescript code
-import { Uuid } from "@ganbarodigital/ts-uuid-parser/V1"
+import { Uuid } from "@ganbarodigital/ts-uuid-parser/lib/v1"
 ```
 
 __VS Code users:__ once you've added a single import anywhere in your project, you'll then be able to auto-import anything else that this library exports.
@@ -37,7 +37,7 @@ class Uuid {
 For example:
 
 ```typescript
-import { Uuid } from "@ganbarodigital/ts-uuid-parser/V1";
+import { Uuid } from "@ganbarodigital/ts-uuid-parser/lib/v1";
 
 // creates a new Uuid
 const myUuid = new Uuid("9c47cb7c-9793-4944-9189-61a938d0e9bd");
@@ -54,7 +54,7 @@ function isUuidData(input: Uuid|string): boolean
 For example:
 
 ```typescript
-import { isUuidData } from "@ganbarodigital/ts-uuid-parser/V1";
+import { isUuidData } from "@ganbarodigital/ts-uuid-parser/lib/v1";
 
 if (!isUuidData("12345-67890")) {
     throw new Error("invalid UUID");
@@ -72,7 +72,7 @@ function isUuidString(input: string): boolean
 For example:
 
 ```typescript
-import { isUuidString } from "@ganbarodigital/ts-uuid-parser/V1";
+import { isUuidString } from "@ganbarodigital/ts-uuid-parser/lib/v1";
 
 if (!isUuidString("12345-67890")) {
     throw new Error("UUID is not well-formatted; cannot use");
@@ -90,7 +90,7 @@ function isUuidType(input: any): input is Uuid
 For example:
 
 ```typescript
-import { Uuid, isUuid } from "@ganbarodigital/ts-uuid-parser/V1";
+import { Uuid, isUuid } from "@ganbarodigital/ts-uuid-parser/lib/v1";
 
 function shortenUuid(input: Uuid|string): string {
     if (isUuid(input)) {
