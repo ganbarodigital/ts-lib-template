@@ -28,7 +28,7 @@
   "dependencies": {
     "@types/node": "^13.1.2",
     "tslint": "^5.20.1",
-    "typescript": "^3.7.4"
+    "typescript": "^3.8.0"
   },
   "devDependencies": {
     "@types/chai": "^4.2.8",
