@@ -21,8 +21,7 @@
   "files": [
     "lib/**/*",
     "CHANGELOG.md",
-    "LICENSE.md",
-    "V1/**"
+    "LICENSE.md"
   ],
   "license": "BSD-3-Clause",
   "dependencies": {
